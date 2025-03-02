@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Assignment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cloud Computing Assignment</h1>
+            <nav>
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to Our Cloud Application</h2>
+                    <p>This interactive web application is hosted on Render.com</p>
+                    <button id="learnMore" class="btn">Learn More</button>
+                </div>
+                <div class="hero-image">
+                    <div class="cloud">
+                        <div class="cloud-circle"></div>
+                        <div class="cloud-circle"></div>
+                        <div class="cloud-circle"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features">
+                <h2>Cloud Features</h2>
+                <div class="feature-cards">
+                    <div class="card" id="card1">
+                        <h3>Scalability</h3>
+                        <p>Easily scale your application based on demand</p>
+                    </div>
+                    <div class="card" id="card2">
+                        <h3>Reliability</h3>
+                        <p>High availability with automatic failover</p>
+                    </div>
+                    <div class="card" id="card3">
+                        <h3>Cost-Effective</h3>
+                        <p>Pay only for the resources you use</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="deployment">
+                <h2>Deployed on Render.com</h2>
+                <p>This application demonstrates cloud deployment principles using Render's hosting platform.</p>
+                <div class="deployment-info">
+                    <div class="info-block">
+                        <h3>Automatic Deployment</h3>
+                        <p>Connected to GitHub for continuous deployment</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Global CDN</h3>
+                        <p>Fast content delivery worldwide</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Cloud Computing Assignment &copy; 2025</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>
